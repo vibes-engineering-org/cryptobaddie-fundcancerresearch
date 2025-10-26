@@ -8,11 +8,11 @@ export async function GET() {
   const config = {
     accountAssociation: {
       header:
-        "eyJmaWQiOjEzNTk2LCJ0eXBlIjoiY3VzdG9keSIsImtleSI6IjB4ODE3MzE4RDZmRkY2NkExOGQ4M0ExMzc2QTc2RjZlMzBCNDNjODg4OSJ9",
+        "eyJmaWQiOjEwNDQ1MTQsInR5cGUiOiJhdXRoIiwia2V5IjoiMHg2QzA4NTBmRjVhYzdEYjI4ZkU2NTMzRUYzNTgxMTlEZEFCN0VFZTQ1In0",
       payload:
-        "eyJkb21haW4iOiJmYXJjYXN0ZXItbWluaWFwcC10ZW1wbGF0ZS52ZXJjZWwuYXBwIn0",
+        "eyJkb21haW4iOiJjcnlwdG9iYWRkaWUtZnVuZGNhbmNlcnJlc2VhcmNoLnZlcmNlbC5hcHAifQ",
       signature:
-        "MHg5ZjkyZTdkNjRmZTNhNTE4YTEzOTBmZTdlYzAwOWQzODUzZWM2N2RmOTZiYjg1MzAwOGRlZDExNjVmOGE5OGVlNDQyYmI0MDU3OTI0ZmEzOGE3N2NlYWRiYThiMTRiN2IzMTY5N2ZjYWVlZGM3MTE1YWNiMTFmYjc2Y2EzYTc0YzFj",
+        "t9jh0g9x/X8SFV+4o1rqVImbJrfVASgnPFhZhhOnMT11YkFW5M1H6Lnmkfw88P2SejxtRrK32KwApDrJNAQqfxw=",
     },
     miniapp: {
       version: "1",
