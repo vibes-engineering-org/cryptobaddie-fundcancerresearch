@@ -26,7 +26,7 @@ export default async function Image() {
           overflow: "hidden",
         }}
       >
-        {/* Background gradient with Farcaster purple and electric blue */}
+        {/* Background gradient with hope and medical colors */}
         <div
           style={{
             position: "absolute",
@@ -34,7 +34,7 @@ export default async function Image() {
             left: 0,
             right: 0,
             bottom: 0,
-            background: "linear-gradient(135deg, #8A63D2 0%, #1E90FF 100%)",
+            background: "linear-gradient(135deg, #2E8B57 0%, #4169E1 100%)",
             opacity: 0.9,
           }}
         />
@@ -48,7 +48,7 @@ export default async function Image() {
             right: 0,
             bottom: 0,
             backgroundImage:
-              "radial-gradient(circle at 20% 80%, rgba(138, 99, 210, 0.4) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(30, 144, 255, 0.4) 0%, transparent 50%)",
+              "radial-gradient(circle at 20% 80%, rgba(46, 139, 87, 0.4) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(65, 105, 225, 0.4) 0%, transparent 50%)",
           }}
         />
 
@@ -66,7 +66,7 @@ export default async function Image() {
             zIndex: 10,
           }}
         >
-          {/* User avatar with glow effect */}
+          {/* Medical research icon with glow effect */}
           <div
             style={{
               display: "flex",
@@ -80,21 +80,20 @@ export default async function Image() {
             <div
               style={{
                 position: "absolute",
-                width: "140px",
-                height: "140px",
+                width: "160px",
+                height: "160px",
                 borderRadius: "50%",
                 background:
                   "radial-gradient(circle, rgba(255, 255, 255, 0.3) 0%, transparent 70%)",
                 filter: "blur(20px)",
               }}
             />
-            {/* Avatar container */}
+            {/* Icon container */}
             <div
               style={{
-                width: "120px",
-                height: "120px",
+                width: "140px",
+                height: "140px",
                 borderRadius: "50%",
-                overflow: "hidden",
                 border: "6px solid rgba(255, 255, 255, 0.95)",
                 backgroundColor: "#ffffff",
                 display: "flex",
@@ -104,15 +103,36 @@ export default async function Image() {
                 boxShadow: "0 8px 32px rgba(0, 0, 0, 0.3)",
               }}
             >
-              <img
-                src={PROJECT_AVATAR_URL}
-                alt="User avatar"
-                style={{
-                  width: "100%",
-                  height: "100%",
-                  objectFit: "cover",
-                }}
-              />
+              {/* Medical/Research icon - Heart with cross */}
+              <svg
+                width="80"
+                height="80"
+                viewBox="0 0 24 24"
+                fill="none"
+                style={{ display: "block" }}
+              >
+                <path
+                  d="M12.1 18.55L12 18.65L11.89 18.55C7.14 14.24 4 11.39 4 8.5C4 6.5 5.5 5 7.5 5C9.04 5 10.54 6 11.07 7.36H12.93C13.46 6 14.96 5 16.5 5C18.5 5 20 6.5 20 8.5C20 11.39 16.86 14.24 12.1 18.55M16.5 3C14.76 3 13.09 3.81 12 5.08C10.91 3.81 9.24 3 7.5 3C4.42 3 2 5.41 2 8.5C2 12.27 5.4 15.36 10.55 20.03L12 21.35L13.45 20.03C18.6 15.36 22 12.27 22 8.5C22 5.41 19.58 3 16.5 3Z"
+                  fill="#DC143C"
+                />
+                {/* Medical cross overlay */}
+                <rect
+                  x="10.5"
+                  y="7"
+                  width="3"
+                  height="10"
+                  fill="#ffffff"
+                  rx="1"
+                />
+                <rect
+                  x="8"
+                  y="10.5"
+                  width="8"
+                  height="3"
+                  fill="#ffffff"
+                  rx="1"
+                />
+              </svg>
             </div>
           </div>
 
@@ -154,7 +174,7 @@ export default async function Image() {
             {PROJECT_DESCRIPTION}
           </p>
 
-          {/* Farcaster branding element */}
+          {/* Research initiative branding */}
           <div
             style={{
               display: "flex",
@@ -168,21 +188,25 @@ export default async function Image() {
               boxShadow: "0 8px 32px rgba(0, 0, 0, 0.2)",
             }}
           >
-            {/* Farcaster icon */}
+            {/* Research icon */}
             <svg
               width="32"
               height="32"
-              viewBox="0 0 256 256"
+              viewBox="0 0 24 24"
               fill="none"
               style={{
                 display: "block",
               }}
             >
-              <rect width="256" height="256" rx="56" fill="#7C65C1"></rect>
               <path
-                d="M183.296 71.68H211.968L207.872 94.208H200.704V180.224L201.02 180.232C204.266 180.396 206.848 183.081 206.848 186.368V191.488L207.164 191.496C210.41 191.66 212.992 194.345 212.992 197.632V202.752H155.648V197.632C155.648 194.345 158.229 191.66 161.476 191.496L161.792 191.488V186.368C161.792 183.081 164.373 180.396 167.62 180.232L167.936 180.224V138.24C167.936 116.184 150.056 98.304 128 98.304C105.944 98.304 88.0638 116.184 88.0638 138.24V180.224L88.3798 180.232C91.6262 180.396 94.2078 183.081 94.2078 186.368V191.488L94.5238 191.496C97.7702 191.66 100.352 194.345 100.352 197.632V202.752H43.0078V197.632C43.0078 194.345 45.5894 191.66 48.8358 191.496L49.1518 191.488V186.368C49.1518 183.081 51.7334 180.396 54.9798 180.232L55.2958 180.224V94.208H48.1278L44.0318 71.68H72.7038V54.272H183.296V71.68Z"
+                d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z"
                 fill="white"
-              ></path>
+              />
+              <path
+                d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.46,13.97L5.82,21L12,17.27Z"
+                fill="white"
+                opacity="0.7"
+              />
             </svg>
             <span
               style={{
@@ -193,7 +217,7 @@ export default async function Image() {
                 letterSpacing: "-0.5px",
               }}
             >
-              Farcaster Mini App
+              Research Initiative
             </span>
           </div>
         </div>
